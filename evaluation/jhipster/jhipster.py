@@ -99,7 +99,7 @@ def read_jHipster_configurations() -> list:
             configs.append(row)
     return configs
 
-def read_jHipster_feature_model_configurations() -> dict:
+def read_jHipster_feature_model_configurations() -> dict[FMConfiguration,bool]:
     """Read the configurations of the jHipster feature model from the .csv file."""
         # Read the feature model without constraints
     fide_parser = FeatureIDEParser(FM_FILE, no_read_constraints=True)
