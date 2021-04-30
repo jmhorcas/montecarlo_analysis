@@ -43,19 +43,27 @@ class BDDModel:
     def serialize(self, filepath: str, filetype: str='png'):
         self.bdd.dump(filename=filepath, roots=[self.expression], filetype=filetype)
 
-    def get_number_of_configurations(self, features: list[Feature]=None) -> int:
-        if features is None:
-            return self.bdd.count(self.expression, nvars=len(self.variables))
-        expr = f' {BDDModel.AND} '.join([f.name for f in features]) + f' {BDDModel.AND} ' + '{x}'.format(x=self.expression)
+    def get_number_of_configurations(self, selected_features: list[Feature]=None, deselected_features: list[Feature]=None) -> int:
+        if selected_features is None:
+            expr = self.cnf
+        else:
+            expr = f' {BDDModel.AND} '.join([f.name for f in selected_features])
+        if deselected_features:
+            expr += f' {BDDModel.AND} ' +  f' {BDDModel.AND} !'.join([f.name for f in deselected_features])
+
+        expr += f' {BDDModel.AND} ' + '{x}'.format(x=self.expression)
         u = self.bdd.add_expr(expr)
         return self.bdd.count(u, nvars=len(self.variables))
     
-    def get_configurations(self, features: list[Feature]=None) -> list[FMConfiguration]:
-        if features is None:
+    def get_configurations(self, selected_features: list[Feature]=None, deselected_features: list[Feature]=None) -> list[FMConfiguration]:
+        if selected_features is None:
             expr = self.cnf
         else:
-            expr = f' {BDDModel.AND} '.join([f.name for f in features]) + f' {BDDModel.AND} ' + '{x}'.format(x=self.expression)
+            expr = f' {BDDModel.AND} '.join([f.name for f in selected_features])
+        if deselected_features:
+            expr += f' {BDDModel.AND} ' +  f' {BDDModel.AND} '.join(['!' + f.name for f in deselected_features])
 
+        expr += f' {BDDModel.AND} ' + '{x}'.format(x=self.expression)
         u = self.bdd.add_expr(expr)
         configs = []
         for c in self.bdd.pick_iter(u, care_vars=self.variables):
