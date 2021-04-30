@@ -18,3 +18,6 @@ def select_parent_features(feature: Feature) -> List[Feature]:
         features.append(parent)
         parent = parent.get_parent()
     return features
+
+def has_children(feature: Feature) -> bool:
+    return any(len(r.children) > 0 for r in feature.get_relations())
