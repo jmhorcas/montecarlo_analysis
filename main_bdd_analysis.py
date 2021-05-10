@@ -48,21 +48,38 @@ def main():
     #     print(f" |->#{len(combinations)}")
     
     with open("jhipster_analysis.csv", 'w+') as file:
-        file.write("Variation points, Variation point, Configurations, Defective configs., Real prob. defect. configs., Combinations, Variant combination, NofFeatures, Configs. combi., Defect. configs. combi., Prob. defect. configs. combi., Simulations, Runs, Median defect. configs., Mean defect. configs., Std defect. configs., Prob. defect. configs.\n")
+        file.write("Variation points, Variation point, Configurations, Defective configs., Real prob. defect. configs., Simulations, Median defect. configs., Mean defect. configs., Std defect. configs., Prob. defect. configs., Combinations, Variant combination, NofFeatures, Configs. combi., Ratio, Defect. configs. combi., Prob. defect. configs. combi., Simulations, Runs, Median defect. configs., Mean defect. configs., Std defect. configs., Prob. defect. configs.\n")
 
         for vp in vps:
             # Real probabilities of each variation point
-            vp_configurations = bdd.get_configurations([vp])
+            vp_configurations = bdd.get_configurations(selected_features=[vp])
             vp_defective_configs = [c for c in vp_configurations if jhipster_configurations[c]]
             vp_probability_defective_configs = round(len(vp_defective_configs) / len(vp_configurations), DIGIT_PRECISION)
+
+
+            # Monte Carlo simulations for the variation point
+            vp_simulations = math.ceil(len(vp_configurations) * PERCENTAGE_SIMULATIONS)
+            runs = RUNS
+            vp_defective_configs_in_sample_per_runs = []
+            for r in range(runs):
+                vp_sample_configurations = random.sample(vp_configurations, vp_simulations)
+                vp_defective_configs_in_sample = [c for c in vp_sample_configurations if jhipster_configurations[c]]
+                vp_defective_configs_in_sample_per_runs.append(len(vp_defective_configs_in_sample))
+
+            vp_median_defective_configs_in_sample = round(statistics.median(vp_defective_configs_in_sample_per_runs), DIGIT_PRECISION)
+            vp_mean_defective_configs_in_sample = round(statistics.mean(vp_defective_configs_in_sample_per_runs), DIGIT_PRECISION)
+            vp_std_defective_configs_in_sample = round(statistics.stdev(vp_defective_configs_in_sample_per_runs), DIGIT_PRECISION)
+            vp_sample_median_probability_defective_configs = round(vp_median_defective_configs_in_sample / vp_simulations, DIGIT_PRECISION)
 
             combinations = vp_analysis.get_variants_combinations(vp)
             variants = vp_analysis.get_variants(vp)
             for combi in combinations:
                 # Real probabilities of each variant combination
-                selected_features = combi
+                selected_features = list(set(combi).union({vp}))
                 deselected_features = list(set(variants) - set(combi))
-                combi_configurations = bdd.get_configurations(selected_features=combi, deselected_features=deselected_features)
+
+                combi_configurations = bdd.get_configurations(selected_features=selected_features, deselected_features=deselected_features)
+                combi_configurations_ratio = round(len(combi_configurations) / len(vp_configurations), DIGIT_PRECISION)
                 if len(combi_configurations) > 0:
                     combi_defective_configs = [c for c in combi_configurations if jhipster_configurations[c]]
                     combi_probability_defective_configs = round(len(combi_defective_configs) / len(combi_configurations), DIGIT_PRECISION)
@@ -83,12 +100,14 @@ def main():
                     std_defective_configs_in_sample = round(statistics.stdev(defective_configs_in_sample_per_runs), DIGIT_PRECISION)
                     sample_median_probability_defective_configs = round(median_defective_configs_in_sample / simulations, DIGIT_PRECISION)
 
-                    file.write(f'{len(vps)}, {vp.name}, {len(vp_configurations)}, {len(vp_defective_configs)}, {vp_probability_defective_configs}, {len(combinations)}, ' \
-                                + f'"{[str(f) for f in combi]}", {len(combi)}, {len(combi_configurations)}, {len(combi_defective_configs)}, {combi_probability_defective_configs}, ' \
+                    file.write(f'{len(vps)}, {vp.name}, {len(vp_configurations)}, {len(vp_defective_configs)}, {vp_probability_defective_configs}, ' \
+                                + f'{vp_simulations}, {vp_median_defective_configs_in_sample}, {vp_mean_defective_configs_in_sample}, {vp_std_defective_configs_in_sample}, {vp_sample_median_probability_defective_configs}, ' \
+                                + f'{len(combinations)}, "{[str(f) for f in combi]}", {len(combi)}, {len(combi_configurations)}, {combi_configurations_ratio}, {len(combi_defective_configs)}, {combi_probability_defective_configs}, ' \
                                 + f'{simulations}, {runs}, {median_defective_configs_in_sample}, {mean_defective_configs_in_sample}, {std_defective_configs_in_sample}, {sample_median_probability_defective_configs}\n')
                 else:
-                    file.write(f'{len(vps)}, {vp.name}, {len(vp_configurations)}, {len(vp_defective_configs)}, {vp_probability_defective_configs}, {len(combinations)}, ' \
-                            + f'"{[str(f) for f in combi]}", {len(combi)}, {len(combi_configurations)}, {0}, {0}, ' \
+                    file.write(f'{len(vps)}, {vp.name}, {len(vp_configurations)}, {len(vp_defective_configs)}, {vp_probability_defective_configs}, ' \
+                            + f'{vp_simulations}, {vp_median_defective_configs_in_sample}, {vp_mean_defective_configs_in_sample}, {vp_std_defective_configs_in_sample}, {vp_sample_median_probability_defective_configs}, ' \
+                            + f'{len(combinations)}, "{[str(f) for f in combi]}", {len(combi)}, {len(combi_configurations)}, {combi_configurations_ratio}, {0}, {0}, ' \
                             + f'{"-"}, {"-"}, {"-"}, {"-"}, {"-"}, {"-"}\n')
 
     # for v in bdd.variables:

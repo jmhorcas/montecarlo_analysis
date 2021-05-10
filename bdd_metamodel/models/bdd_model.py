@@ -44,7 +44,7 @@ class BDDModel:
         self.bdd.dump(filename=filepath, roots=[self.expression], filetype=filetype)
 
     def get_number_of_configurations(self, selected_features: list[Feature]=None, deselected_features: list[Feature]=None) -> int:
-        if selected_features is None or selected_features == []:
+        if not selected_features:
             expr = self.cnf
         else:
             expr = f' {BDDModel.AND} '.join([f.name for f in selected_features])
@@ -56,7 +56,7 @@ class BDDModel:
         return self.bdd.count(u, nvars=len(self.variables))
     
     def get_configurations(self, selected_features: list[Feature]=None, deselected_features: list[Feature]=None) -> list[FMConfiguration]:
-        if selected_features is None or selected_features == []:
+        if not selected_features:
             expr = self.cnf
         else:
             expr = f' {BDDModel.AND} '.join([f.name for f in selected_features])
