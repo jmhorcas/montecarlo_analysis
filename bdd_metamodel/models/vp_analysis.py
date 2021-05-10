@@ -47,12 +47,12 @@ class VariationPointAnalysis:
                 combinations.append(list(v))
         return combinations
 
-    def get_configurations(self, vp: Feature, filter_test: Callable=None) -> list[FMConfiguration]:
-        configurations = self.bdd_model.get_configurations([vp])
-        if filter is None:
-            return configurations
-        else:
-            return list(filter(filter_test, configurations))
+    # def get_configurations(self, vp: Feature, filter_test: Callable=None) -> list[FMConfiguration]:
+    #     configurations = self.bdd_model.get_configurations([vp])
+    #     if filter is None:
+    #         return configurations
+    #     else:
+    #         return list(filter(filter_test, configurations))
 
     
     #def get_uniform_random_sample(self, configurations: list[FMConfiguration], size: int)

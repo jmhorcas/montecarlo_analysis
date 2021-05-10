@@ -114,5 +114,56 @@ def main():
     #     print(f"#Configs {v}: {bdd.get_number_of_configurations([v])} ({round(bdd.get_number_of_configurations([v]) / bdd.get_number_of_configurations(), 2)})")
     #     print(f"#RealConfigs {v}: {len([c for c in configurations if v in c])}")
 
+def calculate_montecarlo_approximation():
+    fide_parser = FeatureIDEParser(jhipster.FM_FILE, no_read_constraints=True)
+    fm = fide_parser.transform()
+
+    # Read the feature model as CNF model with complex constraints
+    cnf_reader = CNFReader(jhipster.CNF_FILE)
+    cnf_model = cnf_reader.transform()
+
+    # Read the jHipster configurations
+    jhipster_configurations = jhipster.read_jHipster_feature_model_configurations()
+
+    bdd = BDDModel(feature_model=fm, cnf_formula=JHIPSTER)
+    nof_configurations = bdd.get_number_of_configurations()
+    all_configurations = bdd.get_configurations()
+    all_defective_configs = [c for c in all_configurations if jhipster_configurations[c]]
+    all_prob_defect_configs = round(len(all_defective_configs) / len(all_configurations), DIGIT_PRECISION)
+
+    print(f"Variables: {bdd.variables}")
+    print(f"#Variables: {len(bdd.variables)}")
+    print(f"#Configurations: {len(all_configurations)}")
+    
+    with open("jhipster_mc_approximation.csv", 'w+') as file:
+        file.write("Runs, Total configs., Total Defective configs., Real Prob. Defect. configs., Percentage, Simulations, Median defect. configs., Mean defect. configs., Std defect. configs., Prob. defect. configs., Error\n")
+
+        percentages = [x/1000 for x in range(1, 101, 1)]
+        simulations_list = [1] + [x for x in range(10, 5001, 10)]
+        #for percentage_sim in percentages:    
+        print("Simulation: ", end='', flush=True)
+        for simulations in simulations_list:
+            runs = RUNS
+            #simulations = math.ceil(len(all_configurations) * percentage_sim)
+            percentage_sim = round(simulations/len(all_configurations), DIGIT_PRECISION)
+            print(f"{simulations} ", end='', flush=True)
+
+            defective_configs_in_sample_per_runs = []
+            for r in range(runs):
+                sample_configurations = random.sample(all_configurations, simulations)
+                defective_configs_in_sample = [c for c in sample_configurations if jhipster_configurations[c]]
+                defective_configs_in_sample_per_runs.append(len(defective_configs_in_sample))
+                            
+            median_defective_configs_in_sample = round(statistics.median(defective_configs_in_sample_per_runs), DIGIT_PRECISION)
+            mean_defective_configs_in_sample = round(statistics.mean(defective_configs_in_sample_per_runs), DIGIT_PRECISION)
+            std_defective_configs_in_sample = round(statistics.stdev(defective_configs_in_sample_per_runs), DIGIT_PRECISION)
+            sample_median_probability_defective_configs = round(median_defective_configs_in_sample / simulations, DIGIT_PRECISION)
+
+            error = round(abs(sample_median_probability_defective_configs - all_prob_defect_configs), DIGIT_PRECISION)
+            file.write(f'{runs}, {len(all_configurations)}, {len(all_defective_configs)}, {all_prob_defect_configs}, {percentage_sim}, {simulations}, ' \
+                                + f'{median_defective_configs_in_sample}, {mean_defective_configs_in_sample}, {std_defective_configs_in_sample}, {sample_median_probability_defective_configs}, {error}\n')
+
+
 if __name__ == "__main__":
     main()
+    calculate_montecarlo_approximation()
