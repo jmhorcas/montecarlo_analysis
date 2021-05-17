@@ -1,0 +1,161 @@
+Variation points, Variation point, Configurations, Defective configs., Real prob. defect. configs., Simulations, Median defect. configs., Mean defect. configs., Std defect. configs., Prob. defect. configs., Combinations, Variant combination, NofFeatures, Configs. combi., Ratio, Defect. configs. combi., Prob. defect. configs. combi., Simulations, Runs, Median defect. configs., Mean defect. configs., Std defect. configs., Prob. defect. configs.
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "[]", 0, 4, 0.0002, 2, 0.5, 1, 30, 0.0, 0.4667, 0.5074, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin']", 1, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database']", 1, 894, 0.034, 331, 0.3702, 9, 30, 3.5, 3.4333, 1.3309, 0.3889
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets']", 1, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Libsass']", 1, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['ClusteredSession']", 1, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['InternationalizationSupport']", 1, 4, 0.0002, 2, 0.5, 1, 30, 1.0, 0.5333, 0.5074, 1.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Docker']", 1, 4, 0.0002, 2, 0.5, 1, 30, 1.0, 0.6, 0.4983, 1.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database']", 2, 220, 0.0084, 42, 0.1909, 3, 30, 0.0, 0.5667, 0.7279, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Libsass']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'ClusteredSession']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'InternationalizationSupport']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Docker']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets']", 2, 558, 0.0213, 185, 0.3315, 6, 30, 3.0, 2.4333, 1.3309, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'Libsass']", 2, 558, 0.0213, 183, 0.328, 6, 30, 2.0, 1.5, 0.9738, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'ClusteredSession']", 2, 558, 0.0213, 182, 0.3262, 6, 30, 2.0, 2.1667, 1.0532, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'InternationalizationSupport']", 2, 894, 0.034, 332, 0.3714, 9, 30, 3.0, 3.2667, 1.5071, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'Docker']", 2, 894, 0.034, 415, 0.4642, 9, 30, 4.0, 3.8, 1.808, 0.4444
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'Libsass']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'ClusteredSession']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'InternationalizationSupport']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'Docker']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Libsass', 'ClusteredSession']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Libsass', 'InternationalizationSupport']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Libsass', 'Docker']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['ClusteredSession', 'InternationalizationSupport']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['ClusteredSession', 'Docker']", 2, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['InternationalizationSupport', 'Docker']", 2, 4, 0.0002, 2, 0.5, 1, 30, 0.0, 0.4, 0.4983, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets']", 3, 220, 0.0084, 40, 0.1818, 3, 30, 0.0, 0.3333, 0.5467, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'Libsass']", 3, 220, 0.0084, 41, 0.1864, 3, 30, 1.0, 0.7333, 0.7397, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'ClusteredSession']", 3, 220, 0.0084, 41, 0.1864, 3, 30, 0.0, 0.4667, 0.6288, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'InternationalizationSupport']", 3, 220, 0.0084, 42, 0.1909, 3, 30, 0.0, 0.5333, 0.7303, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'Docker']", 3, 220, 0.0084, 60, 0.2727, 3, 30, 1.0, 0.8333, 0.7466, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'Libsass']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'ClusteredSession']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'InternationalizationSupport']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'Docker']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Libsass', 'ClusteredSession']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Libsass', 'InternationalizationSupport']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Libsass', 'Docker']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'ClusteredSession', 'InternationalizationSupport']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'ClusteredSession', 'Docker']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'InternationalizationSupport', 'Docker']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'Libsass']", 3, 558, 0.0213, 182, 0.3262, 6, 30, 2.0, 1.8, 1.0954, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'ClusteredSession']", 3, 558, 0.0213, 184, 0.3297, 6, 30, 2.0, 1.8, 0.9613, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'InternationalizationSupport']", 3, 558, 0.0213, 185, 0.3315, 6, 30, 1.5, 1.7, 1.3684, 0.25
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'Docker']", 3, 558, 0.0213, 265, 0.4749, 6, 30, 3.0, 3.1, 1.0939, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'Libsass', 'ClusteredSession']", 3, 558, 0.0213, 186, 0.3333, 6, 30, 2.0, 2.1333, 1.0417, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'Libsass', 'InternationalizationSupport']", 3, 558, 0.0213, 185, 0.3315, 6, 30, 2.0, 2.1667, 1.4641, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'Libsass', 'Docker']", 3, 558, 0.0213, 260, 0.4659, 6, 30, 3.0, 2.6333, 1.2994, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'ClusteredSession', 'InternationalizationSupport']", 3, 558, 0.0213, 180, 0.3226, 6, 30, 2.0, 1.8667, 0.8996, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'ClusteredSession', 'Docker']", 3, 558, 0.0213, 261, 0.4677, 6, 30, 3.0, 2.8667, 1.3322, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'InternationalizationSupport', 'Docker']", 3, 894, 0.034, 421, 0.4709, 9, 30, 4.0, 3.9, 1.6474, 0.4444
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'Libsass', 'ClusteredSession']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'Libsass', 'InternationalizationSupport']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'Libsass', 'Docker']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'ClusteredSession', 'InternationalizationSupport']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'ClusteredSession', 'Docker']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'InternationalizationSupport', 'Docker']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Libsass', 'ClusteredSession', 'InternationalizationSupport']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Libsass', 'ClusteredSession', 'Docker']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Libsass', 'InternationalizationSupport', 'Docker']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['ClusteredSession', 'InternationalizationSupport', 'Docker']", 3, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'Libsass']", 4, 220, 0.0084, 40, 0.1818, 3, 30, 0.0, 0.5667, 0.7279, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'ClusteredSession']", 4, 220, 0.0084, 41, 0.1864, 3, 30, 0.0, 0.4333, 0.5683, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'InternationalizationSupport']", 4, 220, 0.0084, 40, 0.1818, 3, 30, 0.0, 0.5, 0.6297, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'Docker']", 4, 220, 0.0084, 61, 0.2773, 3, 30, 1.0, 0.7667, 0.8584, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'Libsass', 'ClusteredSession']", 4, 220, 0.0084, 40, 0.1818, 3, 30, 0.0, 0.4, 0.5632, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'Libsass', 'InternationalizationSupport']", 4, 220, 0.0084, 40, 0.1818, 3, 30, 0.0, 0.4667, 0.5074, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'Libsass', 'Docker']", 4, 220, 0.0084, 60, 0.2727, 3, 30, 1.0, 0.9667, 0.9279, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'ClusteredSession', 'InternationalizationSupport']", 4, 220, 0.0084, 40, 0.1818, 3, 30, 0.0, 0.4333, 0.504, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'ClusteredSession', 'Docker']", 4, 220, 0.0084, 61, 0.2773, 3, 30, 1.0, 0.7, 0.7022, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'InternationalizationSupport', 'Docker']", 4, 220, 0.0084, 60, 0.2727, 3, 30, 1.0, 0.8333, 0.8339, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'Libsass', 'ClusteredSession']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'Libsass', 'InternationalizationSupport']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'Libsass', 'Docker']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'ClusteredSession', 'InternationalizationSupport']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'ClusteredSession', 'Docker']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'InternationalizationSupport', 'Docker']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Libsass', 'ClusteredSession', 'InternationalizationSupport']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Libsass', 'ClusteredSession', 'Docker']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Libsass', 'InternationalizationSupport', 'Docker']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'Libsass', 'ClusteredSession']", 4, 558, 0.0213, 183, 0.328, 6, 30, 2.0, 1.9333, 1.1725, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'Libsass', 'InternationalizationSupport']", 4, 558, 0.0213, 183, 0.328, 6, 30, 2.0, 1.8, 1.0306, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'Libsass', 'Docker']", 4, 558, 0.0213, 260, 0.4659, 6, 30, 3.0, 2.8333, 1.2888, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'ClusteredSession', 'InternationalizationSupport']", 4, 558, 0.0213, 185, 0.3315, 6, 30, 2.0, 1.8333, 1.0199, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'ClusteredSession', 'Docker']", 4, 558, 0.0213, 266, 0.4767, 6, 30, 3.0, 3.0333, 1.0662, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'InternationalizationSupport', 'Docker']", 4, 558, 0.0213, 261, 0.4677, 6, 30, 3.0, 2.8, 0.9248, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'Libsass', 'ClusteredSession', 'InternationalizationSupport']", 4, 558, 0.0213, 183, 0.328, 6, 30, 2.0, 1.9, 1.3734, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'Libsass', 'ClusteredSession', 'Docker']", 4, 558, 0.0213, 267, 0.4785, 6, 30, 3.0, 3, 1.0505, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'Libsass', 'InternationalizationSupport', 'Docker']", 4, 558, 0.0213, 264, 0.4731, 6, 30, 3.0, 3.0333, 1.0662, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 4, 558, 0.0213, 259, 0.4642, 6, 30, 3.0, 2.6333, 1.1885, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'Libsass', 'ClusteredSession', 'InternationalizationSupport']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'Libsass', 'ClusteredSession', 'Docker']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'Libsass', 'InternationalizationSupport', 'Docker']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Libsass', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 4, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'Libsass', 'ClusteredSession']", 5, 220, 0.0084, 41, 0.1864, 3, 30, 1.0, 0.7, 0.596, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'Libsass', 'InternationalizationSupport']", 5, 220, 0.0084, 41, 0.1864, 3, 30, 0.0, 0.4667, 0.6814, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'Libsass', 'Docker']", 5, 220, 0.0084, 58, 0.2636, 3, 30, 1.0, 0.9667, 0.7184, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'ClusteredSession', 'InternationalizationSupport']", 5, 220, 0.0084, 42, 0.1909, 3, 30, 0.0, 0.5667, 0.7739, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'ClusteredSession', 'Docker']", 5, 220, 0.0084, 62, 0.2818, 3, 30, 1.0, 0.7333, 0.7397, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'InternationalizationSupport', 'Docker']", 5, 220, 0.0084, 58, 0.2636, 3, 30, 1.0, 0.7, 0.7022, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'Libsass', 'ClusteredSession', 'InternationalizationSupport']", 5, 220, 0.0084, 41, 0.1864, 3, 30, 0.0, 0.4667, 0.5713, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'Libsass', 'ClusteredSession', 'Docker']", 5, 220, 0.0084, 60, 0.2727, 3, 30, 1.0, 0.8, 0.7611, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'Libsass', 'InternationalizationSupport', 'Docker']", 5, 220, 0.0084, 59, 0.2682, 3, 30, 1.0, 0.9333, 0.6397, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 5, 220, 0.0084, 61, 0.2773, 3, 30, 1.0, 0.9667, 0.7184, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'Libsass', 'ClusteredSession', 'InternationalizationSupport']", 5, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'Libsass', 'ClusteredSession', 'Docker']", 5, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'Libsass', 'InternationalizationSupport', 'Docker']", 5, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 5, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Libsass', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 5, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'Libsass', 'ClusteredSession', 'InternationalizationSupport']", 5, 558, 0.0213, 184, 0.3297, 6, 30, 2.0, 2.0333, 0.9279, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'Libsass', 'ClusteredSession', 'Docker']", 5, 558, 0.0213, 267, 0.4785, 6, 30, 2.0, 2.3, 1.3684, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'Libsass', 'InternationalizationSupport', 'Docker']", 5, 558, 0.0213, 261, 0.4677, 6, 30, 3.0, 2.9, 1.1847, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 5, 558, 0.0213, 269, 0.4821, 6, 30, 3.0, 3.2667, 1.1427, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'Libsass', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 5, 558, 0.0213, 258, 0.4624, 6, 30, 3.0, 2.6667, 1.2685, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SpringWebSockets', 'Libsass', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 5, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'Libsass', 'ClusteredSession', 'InternationalizationSupport']", 6, 220, 0.0084, 42, 0.1909, 3, 30, 0.0, 0.5667, 0.7739, 0.0
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'Libsass', 'ClusteredSession', 'Docker']", 6, 220, 0.0084, 60, 0.2727, 3, 30, 1.0, 0.9, 0.9229, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'Libsass', 'InternationalizationSupport', 'Docker']", 6, 220, 0.0084, 61, 0.2773, 3, 30, 1.0, 1, 0.8305, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 6, 220, 0.0084, 60, 0.2727, 3, 30, 1.0, 0.8, 0.8052, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'Libsass', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 6, 220, 0.0084, 61, 0.2773, 3, 30, 1.0, 0.7, 0.6513, 0.3333
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'SpringWebSockets', 'Libsass', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 6, 0, 0.0, 0, 0, -, -, -, -, -, -
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['Database', 'SpringWebSockets', 'Libsass', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 6, 558, 0.0213, 263, 0.4713, 6, 30, 3.0, 2.9, 0.9948, 0.5
+13, JHipster, 26256, 9376, 0.3571, 263, 96.0, 95.3333, 9.5388, 0.365, 128, "['SocialLogin', 'Database', 'SpringWebSockets', 'Libsass', 'ClusteredSession', 'InternationalizationSupport', 'Docker']", 7, 220, 0.0084, 62, 0.2818, 3, 30, 1.0, 0.7333, 0.6397, 0.3333
+13, Generator, 26256, 9376, 0.3571, 263, 97.5, 97.1, 8.1594, 0.3707, 2, "['Server']", 1, 1360, 0.0518, 631, 0.464, 14, 30, 7.0, 6.7, 1.8597, 0.5
+13, Generator, 26256, 9376, 0.3571, 263, 97.5, 97.1, 8.1594, 0.3707, 2, "['Application']", 1, 24896, 0.9482, 8745, 0.3513, 249, 30, 87.5, 86.9667, 6.9256, 0.3514
+13, Server, 1360, 631, 0.464, 14, 7.0, 7, 2.1009, 0.5, 2, "['MicroserviceApplication']", 1, 912, 0.6706, 532, 0.5833, 10, 30, 5.0, 5.5333, 1.6554, 0.5
+13, Server, 1360, 631, 0.464, 14, 7.0, 7, 2.1009, 0.5, 2, "['UaaServer']", 1, 448, 0.3294, 99, 0.221, 5, 30, 1.0, 1, 0.8305, 0.2
+13, Application, 24896, 8745, 0.3513, 249, 84.0, 85, 7.5201, 0.3373, 2, "['MicroserviceGateway']", 1, 7168, 0.2879, 4184, 0.5837, 72, 30, 41.5, 41.0333, 4.0978, 0.5764
+13, Application, 24896, 8745, 0.3513, 249, 84.0, 85, 7.5201, 0.3373, 2, "['Monolithic']", 1, 17728, 0.7121, 4561, 0.2573, 178, 30, 44.5, 44.5333, 5.5754, 0.25
+13, Authentication, 26256, 9376, 0.3571, 263, 93.0, 93.1, 7.0874, 0.3536, 4, "['HTTPSession']", 1, 7104, 0.2706, 1586, 0.2233, 72, 30, 17.0, 17.2, 3.5758, 0.2361
+13, Authentication, 26256, 9376, 0.3571, 263, 93.0, 93.1, 7.0874, 0.3536, 4, "['OAuth2']", 1, 3520, 0.1341, 1397, 0.3969, 36, 30, 13.0, 13.3333, 2.8688, 0.3611
+13, Authentication, 26256, 9376, 0.3571, 263, 93.0, 93.1, 7.0874, 0.3536, 4, "['Uaa']", 1, 4488, 0.1709, 4114, 0.9167, 45, 30, 42.0, 41.7333, 1.4606, 0.9333
+13, Authentication, 26256, 9376, 0.3571, 263, 93.0, 93.1, 7.0874, 0.3536, 4, "['JWT']", 1, 11144, 0.4244, 2279, 0.2045, 112, 30, 22.5, 22.5, 4.0065, 0.2009
+13, Database, 26240, 9368, 0.357, 263, 95.0, 93.4667, 6.2242, 0.3612, 3, "['SQL']", 1, 25488, 0.9713, 8992, 0.3528, 255, 30, 91.5, 90.5667, 6.9266, 0.3588
+13, Database, 26240, 9368, 0.357, 263, 95.0, 93.4667, 6.2242, 0.3612, 3, "['Cassandra']", 1, 280, 0.0107, 176, 0.6286, 3, 30, 2.0, 1.7333, 0.6397, 0.6667
+13, Database, 26240, 9368, 0.357, 263, 95.0, 93.4667, 6.2242, 0.3612, 3, "['MongoDB']", 1, 472, 0.018, 200, 0.4237, 5, 30, 2.0, 2.1, 1.0289, 0.4
+13, SQL, 25488, 8992, 0.3528, 255, 94.0, 93.4, 7.4907, 0.3686, 4, "[]", 0, 4248, 0.1667, 1607, 0.3783, 43, 30, 16.5, 16.2667, 2.6644, 0.3837
+13, SQL, 25488, 8992, 0.3528, 255, 94.0, 93.4, 7.4907, 0.3686, 4, "['Hibernate2ndLvlCache']", 1, 8496, 0.3333, 3218, 0.3788, 85, 30, 32.5, 32.6333, 5.1292, 0.3824
+13, SQL, 25488, 8992, 0.3528, 255, 94.0, 93.4, 7.4907, 0.3686, 4, "['ElasticSearch']", 1, 4248, 0.1667, 1390, 0.3272, 43, 30, 14.0, 13.7333, 2.8154, 0.3256
+13, SQL, 25488, 8992, 0.3528, 255, 94.0, 93.4, 7.4907, 0.3686, 4, "['Hibernate2ndLvlCache', 'ElasticSearch']", 2, 8496, 0.3333, 2777, 0.3269, 85, 30, 27.5, 27.9, 4.3656, 0.3235
+13, Hibernate2ndLvlCache, 16992, 5995, 0.3528, 170, 61.0, 60.7, 7.5892, 0.3588, 2, "['HazelCast']", 1, 8496, 0.5, 2985, 0.3513, 85, 30, 29.0, 29.0667, 5.4705, 0.3412
+13, Hibernate2ndLvlCache, 16992, 5995, 0.3528, 170, 61.0, 60.7, 7.5892, 0.3588, 2, "['EhCache']", 1, 8496, 0.5, 3010, 0.3543, 85, 30, 30.0, 30.1333, 4.5693, 0.3529
+13, Development, 25488, 8992, 0.3528, 255, 88.5, 89.8, 7.9715, 0.3471, 4, "['H2']", 1, 16992, 0.6667, 5970, 0.3513, 170, 30, 61.5, 61.3333, 5.1884, 0.3618
+13, Development, 25488, 8992, 0.3528, 255, 88.5, 89.8, 7.9715, 0.3471, 4, "['PostgreSQLDev']", 1, 2832, 0.1111, 551, 0.1946, 29, 30, 6.0, 5.8667, 2.2087, 0.2069
+13, Development, 25488, 8992, 0.3528, 255, 88.5, 89.8, 7.9715, 0.3471, 4, "['MariaDBDev']", 1, 2832, 0.1111, 1913, 0.6755, 29, 30, 19.0, 19.2, 2.441, 0.6552
+13, Development, 25488, 8992, 0.3528, 255, 88.5, 89.8, 7.9715, 0.3471, 4, "['MySql']", 1, 2832, 0.1111, 558, 0.197, 29, 30, 5.0, 5.4333, 2.4023, 0.1724
+13, H2, 16992, 5970, 0.3513, 170, 59.5, 59.4667, 6.527, 0.35, 2, "['DiskBased']", 1, 8496, 0.5, 2986, 0.3515, 85, 30, 30.0, 29.5333, 5.1844, 0.3529
+13, H2, 16992, 5970, 0.3513, 170, 59.5, 59.4667, 6.527, 0.35, 2, "['InMemory']", 1, 8496, 0.5, 2984, 0.3512, 85, 30, 31.0, 30.4, 3.6351, 0.3647
+13, Production, 25488, 8992, 0.3528, 255, 92.0, 92, 5.8487, 0.3608, 3, "['MySQL']", 1, 8496, 0.3333, 1660, 0.1954, 85, 30, 17.0, 16.6, 3.1028, 0.2
+13, Production, 25488, 8992, 0.3528, 255, 92.0, 92, 5.8487, 0.3608, 3, "['MariaDB']", 1, 8496, 0.3333, 5708, 0.6718, 85, 30, 58.0, 57.8333, 3.6774, 0.6824
+13, Production, 25488, 8992, 0.3528, 255, 92.0, 92, 5.8487, 0.3608, 3, "['PostgreSQL']", 1, 8496, 0.3333, 1624, 0.1911, 85, 30, 15.5, 15.7333, 4.1848, 0.1824
+13, BackEnd, 26256, 9376, 0.3571, 263, 93.5, 93.7, 6.4869, 0.3555, 2, "['Gradle']", 1, 13128, 0.5, 6105, 0.465, 132, 30, 62.0, 62.5667, 6.8917, 0.4697
+13, BackEnd, 26256, 9376, 0.3571, 263, 93.5, 93.7, 6.4869, 0.3555, 2, "['Maven']", 1, 13128, 0.5, 3271, 0.2492, 132, 30, 31.5, 31.8333, 5.1734, 0.2386
+13, TestingFrameworks, 26256, 9376, 0.3571, 263, 95.0, 95.3667, 9.9775, 0.3612, 2, "[]", 0, 1360, 0.0518, 631, 0.464, 14, 30, 7.0, 6.7, 1.9502, 0.5
+13, TestingFrameworks, 26256, 9376, 0.3571, 263, 95.0, 95.3667, 9.9775, 0.3612, 2, "['Protractor']", 1, 24896, 0.9482, 8745, 0.3513, 249, 30, 87.5, 87.8333, 8.3998, 0.3514

@@ -73,10 +73,14 @@ def main():
 
             combinations = vp_analysis.get_variants_combinations(vp)
             variants = vp_analysis.get_variants(vp)
+            combinations = variants
             for combi in combinations:
                 # Real probabilities of each variant combination
-                selected_features = list(set(combi).union({vp}))
-                deselected_features = list(set(variants) - set(combi))
+                #selected_features = list(set(combi).union({vp}))
+                combi = [combi]
+                selected_features = combi + [vp]
+                #deselected_features = list(set(variants) - set(combi))
+                deselected_features = []
 
                 combi_configurations = bdd.get_configurations(selected_features=selected_features, deselected_features=deselected_features)
                 combi_configurations_ratio = round(len(combi_configurations) / len(vp_configurations), DIGIT_PRECISION)
@@ -166,4 +170,4 @@ def calculate_montecarlo_approximation():
 
 if __name__ == "__main__":
     main()
-    calculate_montecarlo_approximation()
+    #calculate_montecarlo_approximation()
