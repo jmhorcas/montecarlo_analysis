@@ -12,9 +12,9 @@ from montecarlo4fms.aafm.fileformats.cnf_reader import CNFReader
 from montecarlo4fms.aafm.utils.aafms_helper import AAFMsHelper
 
 from montecarlo4fms.problems.reverse_engineering.models import FMState
-from montecarlo4fms.algorithms import MonteCarloAlgorithms
+from montecarlo4fms.algorithms import MonteCarloAlgorithms, MonteCarloTreeSearch
 from montecarlo4fms.utils import MCTSStatsRE
-
+from montecarlo4fms.utils.mc_random import MCRandom as random
 
 # CONSTANTS
 OUTPUT_RESULTS_PATH = "output_results/"
@@ -77,7 +77,10 @@ def main(algorithm, simulations: int, input_fm: str, input_cnf_model: str=None):
         new_state = algorithm.run(state)
         end_time = time.time()
         
-        mcts_stats_re.add_step(n, algorithm.tree, algorithm.Q, algorithm.N, state, new_state, simulations, end_time-start_time)
+        if isinstance(algorithm, MonteCarloTreeSearch):  
+            mcts_stats_re.add_step(n, algorithm.tree, algorithm.Q, algorithm.N, state, new_state, simulations, end_time-start_time)
+        else:
+            algorithm.tree = {} 
         state = new_state
         n += 1
 
@@ -118,7 +121,11 @@ if __name__ == '__main__':
     parser.add_argument('-it', '--iterations', dest='iterations', type=int, required=False, default=100, help='Number of iterations for MCTS (default 100).')
     parser.add_argument('-ew', '--exploration_weight', dest='exploration_weight', type=float, required=False, default=0.5, help='Exploration weight constant for UCT Algorithm (default 0.5).')
     parser.add_argument('-m', '--method', dest='method', type=str, required=False, default="MCTS", help='Monte Carlo algorithm to be used ("MCTS" for the UCT Algorithm (default), "Greedy" for GreedyMCTS, "flat" for basic Monte Carlo).')
+    parser.add_argument('-s', '--seed', dest='seed', type=int, required=False, default=None, help='Seed to initialize the random generator (default None), setup only for replication purposes.')
     args = parser.parse_args()
+
+    if args.seed is not None:
+        random.set_seed(args.seed)
 
     if args.exploration_weight < 0 or args.exploration_weight > 1:
         print(f"ERROR: the exploration weight constant must be in range [0,1].")

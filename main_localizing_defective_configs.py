@@ -18,6 +18,7 @@ from montecarlo4fms.problems import ProblemData
 from montecarlo4fms.algorithms import MonteCarloAlgorithms, MonteCarloTreeSearch
 from montecarlo4fms.utils import Heatmap
 from montecarlo4fms.utils import MCTSStatsIts, MCTSStats
+from montecarlo4fms.utils.mc_random import MCRandom as random
 
 
 # CONSTANTS
@@ -117,7 +118,11 @@ if __name__ == '__main__':
     parser.add_argument('-ew', '--exploration_weight', dest='exploration_weight', type=float, required=False, default=0.5, help='Exploration weight constant for UCT Algorithm (default 0.5).')
     parser.add_argument('-m', '--method', dest='method', type=str, required=False, default="MCTS", help='Monte Carlo algorithm to be used ("MCTS" for the UCT Algorithm (default), "Greedy" for GreedyMCTS, "flat" for basic Monte Carlo).')
     parser.add_argument('-e', '--excerpt', dest='excerpt', action='store_true', required=False, help='Running the problem with the excerpt running example instead of the complete feature model.')
+    parser.add_argument('-s', '--seed', dest='seed', type=int, required=False, default=None, help='Seed to initialize the random generator (default None), setup only for replication purposes.')
     args = parser.parse_args()
+
+    if args.seed is not None:
+        random.set_seed(args.seed)
 
     if args.exploration_weight < 0 or args.exploration_weight > 1:
         print(f"ERROR: the exploration weight constant must be in range [0,1].")
